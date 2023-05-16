@@ -19,7 +19,6 @@ const Login = () => {
         loginUser(email, password)
         .then(result => {
           const loggedUser = result.user;
-          console.log(loggedUser);
           setSuccess('User login successfully!');
           form.reset();
           setError('');

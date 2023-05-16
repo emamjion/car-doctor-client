@@ -21,7 +21,6 @@ const Signup = () => {
         createUser(email, password)
         .then(result => {
             const signUpUser = result.user;
-            console.log(signUpUser);
             setSuccess('User signup successfully!');
             form.reset();
             setError('');
