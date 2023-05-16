@@ -7,7 +7,6 @@ const Services = () => {
         fetch('services.json')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             setServices(data);
         })
     }, [])
@@ -15,7 +14,7 @@ const Services = () => {
     
     return (
         <div>
-            <div className='mt-6 text-center'>
+            <div className=' text-center'>
                 <h3 className='text-2xl text-[#FF3811] font-medium'>Service</h3>
                 <h2 className='text-5xl my-5 font-bold'>Our Service Area</h2>
                 <p>
@@ -31,6 +30,9 @@ const Services = () => {
 
                     </ServiceCard>)
                 }
+            </div>
+            <div className='text-center'>
+                <button className="border border-[#FF3811] font-medium text-[#ff3811] px-6 py-2 rounded">More Services</button>
             </div>
         </div>
     );
